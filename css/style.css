@@ -1,64 +1,62 @@
 
+/*font family*/
+
+    @font-face{
+	src: url(../font/Playfair_Display/static/playfairdisplay-regular.ttf);
+	font-family: playfairdisplay-regular;
+}
+
+	@font-face{
+	src: url(../font/Ubuntu/ubuntu-light.ttf);
+	font-family: ubuntu-light;
+}
 
 /*font family*/
 
-@font-face{
-src: url(../font/Playfair_Display/static/playfairdisplay-regular.ttf);
-font-family: playfairdisplay-regular;
-}
-
-@font-face{
-src: url(../font/Ubuntu/ubuntu-light.ttf);
-font-family: ubuntu-light;
-}
-
-/*font family*/
-
-/*common css Start*/
+/*Common css Start*/
 
 body{
 	margin: 0;
 	font-family: playfairdisplay-regular;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 400;
 	color: #626262;
 }
 
-/*common css End*/
+/*Common css End*/
 
-/*header start*/
+/*Header Start*/
 
 header{
-	padding: 60px 0;
+	padding: 75px 0;
 }
 
-.continer{
-	overflow: hidden;
+.container{
+	width: 90%;
 	margin: 0 auto;
-    width: 90%;
-/*    border: 1px solid red;*/
+/*	border: 1px solid;*/
+}
+
+.content{
+	overflow: hidden;
+/*	border: 1px solid*/
 }
 
 .logo{
-	margin-top: 4px;
-	float: left;
+	margin-top: 7px;
 	width: 12%;
-/*	border: 1px solid green;*/
+	float: left;
+/*	border: 1px solid red;*/
 }
 
-.logo a{
-	display: inline-block;
-    width: 100%;
-}
-
-.logo a img{
+.logo img{
 	width: 100%;
 }
 
 .menu{
-	float: right;
 	width: 70%;
-/*	border: 1px solid blue;*/
+	float: right;
+/*	border: 1px solid green;*/
 }
 
 .menu ul{
@@ -71,13 +69,13 @@ header{
 }
 
 .menu ul li a{
-    margin: 0 85px;
-    color: #626262;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    transition: .33s linear;
+	display: inline-block;
+	margin: 0 85px;
+	color: #626262;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: .33s linear;
 }
 
 .menu ul li:last-child a{
@@ -85,121 +83,249 @@ header{
 }
 
 .menu ul li a:hover{
-	border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000000;	 
 }
 
-/*header End*/
+/*Header End*/
 
 /*Banner start*/
 
 .banner{}
 
-.b_img{
-}
+.b_content{}
 
-.b_img img{
+.b_content img{
 	width: 100%;
 }
 
-/*Banner end*/
+/*Banner End*/
 
-/*Artical Start*/
+/*Article Start*/
 
-.artical{
-	padding: 70px 0;
+.article{
+	padding: 75px 0 0;
 }
 
-.continer2{
+.container2{
+	overflow: hidden;
 	margin: 0 auto;
-	width: 80%;
-/*	border: 1px solid red;*/
+    width: 80%;
+/*    border: 1px solid red;*/
 }
 
 .a_content{}
 
-.c_link{
-	display: inline-block;
+.link{
 	font-family: ubuntu-light;
-	font-size: 14px;
-	font-weight: 300;
+	display: inline-block;
 	color: #626262;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: .33s linear;
+}
+
+.link:hover{
+	color: #000000;
 }
 
 .comment{
-	margin-top: 45px;
+	margin: 50px 0 30px;
 }
 
-.c_h1{
-	margin: 20px 0 30px;
-	font-size: 30px;
+.h1{
+	margin: 20px 0 40px;
+	font-size: 37px;
     font-weight: 400;
 }
 
-.c_p{
+.p{
 	margin: 0;
 	line-height: 25px;
 }
 
-/*Artical End*/
+/*Article End*/
 
-/*News start*/
+/*Blog start*/
 
-.news{
-	background-color: #F0F0F0;
-    padding: 70px;
-
-.submit{
-
-	text-align: center;
+.blog{
+	padding: 0 0 100px;
+	
 }
 
-.submit h1{
+.bl_content{
+	width: 47%;
+	margin-top: 70px;
+	box-sizing: border-box;
+	float: left;
+/*	border: 1px solid red*/
+}
+
+.bl_content:nth-child(even){
+	margin: 6% 0 0 6%;
+}
+
+.bl_img{
+	margin-bottom: 20px;
+}
+
+.bl_img img{
+	width: 100%;
+}
+
+/*Blog End
+
+/*News Start*/
+
+.news{
+	padding: 70px;
+	background-color: #F0F0F0;
+}
+
+.n_content{
+	text-align: center;
+/*	border: 1px solid;*/
+}
+
+.n_content h1{
 	margin: 0 0 80px;
-	font-size: 30px;
+	font-size: 45px;
     font-weight: 400;
 }
 
-.submit form{
-	width: 30%;
+.n_content form{
+	width: 40%;
     margin: 0 auto;
     position: relative;
 }
 
-.submit form input{
-        width: 80%;
-        padding-right: 50px;
-        font-family: playfairdisplay-regular;
-        font-size: 16px;
-        font-weight: 400;
-        height: 45px;
-        background: transparent;
-        color: #626262;
-        border: none;
-        border-bottom: 1px solid #000000;
+.n_content form input{
+	width: 90%;
+	padding-right: 45px;
+	height: 45px;
+	font-family: playfairdisplay-regular;
+    font-size: 17px;
+    font-weight: 400;
+    color: #626262;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid;
 }
 
-.submit form input:focus{
-	outline: 0;
+.n_content form input:focus{
+	outline: none;
 }
 
-.submit form button{
+.n_content form button{
 	position: absolute;
-    cursor: pointer;
+    top: 16px;
+    right: 0;
     background: transparent;
     border: none;
-    top: 15px;
-    right: 18px;
-
 }
 
-.submit form button:focus{
-	outline: 0;
-}
-
-.submit form button img{}
-
-
+.n_content form button img{}
 
 /*News End*/
+
+/*Blog2 start*/
+
+.blog2{
+	margin-top: 30px;
+}
+
+/*Blog2 end*/
+
+/*Load more start*/
+
+.load{
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.l-btn{
+	width: 165px;
+	height: 60px;
+	font-family: playfairdisplay-regular;
+    font-size: 20px;
+    font-weight: 400;
+    color: #626262;
+	background-color: transparent;
+	border-radius: 0;
+	border: 1px solid #626262;
+}
+
+/*Load more end*/
+
+/*Footer Start*/
+
+footer{
+	padding: 33px 0;
+	background-color: #f0f0f0;
+}
+
+.f_item{
+	overflow: hidden;
+}
+
+.rules{
+	width: 22%;
+	float: left;
+/*	border: 1px solid blue;*/
+}
+
+.rules ul{
+	float: right;
+}
+
+.rules ul li{
+	float: left;
+	list-style: none;
+}
+
+.rules ul li a{
+	padding: 0 10px;
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+	transition: .33s linear;
+}
+
+.rules ul li a:hover{
+	color: #626262;
+}
+
+.rules ul li:last-child a{
+	padding-right: 0;}
+
+.follow{
+	width: 15%;
+	float: right;
+/*	border: 1px solid red;*/
+}
+
+.follow ul{
+	float: right;
+}
+
+.follow ul li{
+	float: left;
+	list-style: none;
+}
+
+.follow ul li span{
+	color: #000000;
+}
+
+.follow ul li a{
+	padding: 0 13px;
+	display: inline-block;
+}
+
+.follow ul li:last-child a{
+	padding-right: 0;}
+
+.follow ul li a img{
+	margin-top: 2px;
+}
+
+/*Footer End*/
