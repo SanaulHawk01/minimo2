@@ -134,7 +134,7 @@ header{
 
 .h1{
 	margin: 20px 0 40px;
-	font-size: 37px;
+	font-size: 30px;
     font-weight: 400;
 }
 
@@ -161,7 +161,7 @@ header{
 }
 
 .bl_content:nth-child(even){
-	margin: 6% 0 0 6%;
+	margin-left: 6%;
 }
 
 .bl_img{
